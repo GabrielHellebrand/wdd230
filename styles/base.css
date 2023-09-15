@@ -1,4 +1,5 @@
 /* Reset some default browser styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body, h1, h2, h3, ul {
     margin: 0;
     padding: 0;
@@ -6,7 +7,7 @@ body, h1, h2, h3, ul {
 
 /* Define the fonts from Google Fonts API */
 body {
-    font-family: 'Times New Roman', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3 {
@@ -37,7 +38,7 @@ nav ul {
 }
 
 nav li {
-    display: inline;
+    display: block;
     margin-right: 20px;
 }
 
