@@ -1,0 +1,73 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Define the fonts from Google Fonts API */
+body {
+    font-family: 'Times New Roman', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Courier New', sans-serif;
+}
+
+/* Apply some basic styling to the page */
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Center the main content on the screen */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* Style the navigation */
+nav ul {
+    list-style-type: none; /* Remove bullets from list */
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Style the header */
+header {
+    margin: 20px 0;
+}
+
+header img {
+    border-radius: 50%;
+    max-width: 100px;
+}
+
+/* Style the footer */
+footer {
+    margin-top: 20px;
+    color: #888;
+}
+
+/* Style the cards */
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Add responsive styles */
+@media (max-width: 768px) {
+    main {
+        max-width: 90%;
+    }
+}
