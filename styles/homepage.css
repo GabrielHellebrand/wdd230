@@ -1,0 +1,132 @@
+/* homepage.css */
+
+/* Style the header */
+header {
+    background-color: blue;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    border-radius: 50%;
+    max-width: 100px;
+    margin-right: 20px;
+}
+
+header h1 {
+    color: white;
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Style the navigation */
+nav {
+    background-color: darkblue;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: block;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Style the cards */
+.card {
+    background-color: blue;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.blue-bg {
+    background-color: blue;
+}
+
+.white-bg {
+    background-color: white;
+}
+.underline {
+    text-decoration: underline;
+}
+/* Style the "Learning Activities" section */
+.learning-activities {
+    background-color: #0073e6; /* Change the blue background color to a more visible shade */
+    color: white; /* Text color for the section */
+    border: 2px solid #005bbf; /* Add a border for emphasis */
+}
+
+.learning-activities h3 {
+    margin-top: 0; /* Remove top margin for the heading */
+}
+
+/* Style the week links */
+.learning-activities ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.learning-activities li {
+    margin: 10px 0;
+}
+
+.learning-activities a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #005bbf; /* Blue background for week links */
+    color: white; /* Text color for week links */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.learning-activities a:hover {
+    background-color: #004ba6; /* Darker blue on hover */
+}
+
+/* Style the "Information" section */
+.information {
+    background-color: #0073e6; /* Change the blue background color to a more visible shade */
+    color: white; /* Text color for the section */
+    border: 2px solid #005bbf; /* Add a border for emphasis */
+}
+
+.information h3 {
+    margin-top: 0; /* Remove top margin for the heading */
+}
+
+/* Style the "Weather Placeholder" and "Visits Placeholder" */
+.information p {
+    margin: 10px 0;
+    background-color: #005bbf; /* Blue background for text */
+    color: white; /* Text color for text */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Make links within the "Information" section more visible */
+.information a {
+    color: white; /* Text color for links */
+    text-decoration: underline;
+}
+
+.information a:hover {
+    text-decoration: none; /* Remove underline on hover if desired */
+}
