@@ -1,0 +1,46 @@
+/* CSS Reset or Normalize */
+/* Add your reset or normalization code here */
+
+/* Typography */
+body {
+    font-family: 'Open Sans', sans-serif; /* Example font choice */
+}
+
+h1, h2 {
+    font-family: 'Roboto', sans-serif; /* Example font choice */
+}
+
+/* Color Scheme */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* Responsive Grid Layout */
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns by default */
+    gap: 20px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 800px) {
+    main {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens */
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        grid-template-columns: 1fr; /* One column on small screens */
+    }
+}
