@@ -4,6 +4,7 @@
 /* Typography */
 body {
     font-family: 'Open Sans', sans-serif; /* Example font choice */
+    background-color: silver;
 }
 
 h1, h2 {
@@ -16,6 +17,7 @@ header {
     color: #fff;
     text-align: center;
     padding: 20px;
+    margin-top: auto;
 }
 
 .card {
@@ -23,23 +25,32 @@ header {
     border: 1px solid #ddd;
     padding: 20px;
     margin: 20px;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
 }
+.card img{
+        max-width: 100%; /* Set the maximum width to the width of the card */
+        height: auto; /* Maintain aspect ratio */
+    }
 
 /* Responsive Grid Layout */
-main {
-    display: flex;
+@media (max-width:1050px) {
+    main {
+    display: grid;
     grid-template-columns: repeat(3, 1fr); /* Three columns by default */
     gap: 20px;
 }
+}
 
 /* Media Queries for Responsive Design */
-@media (max-width: 800px) {
+@media (max-width: 700px) {
     main {
         grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens */
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 400px) {
     main {
         grid-template-columns: 1fr; /* One column on small screens */
     }
