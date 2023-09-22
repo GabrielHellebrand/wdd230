@@ -27,7 +27,7 @@ header {
 
 /* Responsive Grid Layout */
 main {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(3, 1fr); /* Three columns by default */
     gap: 20px;
 }
