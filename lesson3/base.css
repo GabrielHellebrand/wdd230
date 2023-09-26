@@ -1,0 +1,28 @@
+/* Hamburger Button Styles */
+.hamburger-menu {
+    display: none; /* Initially hide in non-mobile view */
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.hamburger-icon {
+    font-size: 24px;
+    color: #333; /* Customize the color */
+}
+/* Show the menu when the hamburger button is clicked */
+.main-menu.show-menu {
+    display: block;
+}
+
+/* Media query to hide the menu by default in non-mobile view */
+@media (min-width: 768px) {
+    .main-menu {
+        display: block !important; /* Important to override previous styles */
+    }
+    .hamburger-menu {
+        display: none;
+    }
+}
