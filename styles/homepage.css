@@ -132,3 +132,34 @@ nav a {
 .information a:hover {
     text-decoration: none; /* Remove underline on hover if desired */
 }
+/* CSS for the hamburger menu */
+#menu-container {
+    display: none;
+}
+
+#menu-toggle {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+/* Show the menu on mobile screens */
+@media (max-width: 768px) {
+    #menu-container {
+        display: block;
+    }
+
+    #main-menu {
+        display: none;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+}
