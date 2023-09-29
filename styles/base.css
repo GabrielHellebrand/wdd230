@@ -72,4 +72,74 @@ footer {
         max-width: 90%;
     }
 }
+   /* Default style for the menu items */
+   #main-menu ul li a {
+    text-decoration: none;
+    color: white; /* Default text color */
+    padding: 10px 15px;
+    display: block;
+}
 
+/* Change text color to blue on hover */
+#main-menu ul li a:hover {
+    color: blue;
+}
+
+/* Default style for the entire menu */
+#main-menu {
+    background-color: black; /* Default background color */
+    width: 100%;
+}
+
+/* Style for the menu toggle button (if needed) */
+#menu-toggle {
+    cursor: pointer;
+}
+
+/* Style for the bars in the menu toggle button */
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Style for the bars when the menu is open */
+.change .bar {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+/* Media query for fullscreen mode */
+@media (min-width: 768px) {
+    /* Change the menu to flex container when the screen is in fullscreen mode */
+    #main-menu {
+        display: flex;
+        justify-content: center; /* Left-align the menu items */
+        align-items: center; /* Adjust alignment if needed */
+        background-color: black; /* Background color in fullscreen mode */
+    }
+
+    /* Style for the menu items in fullscreen mode */
+    #main-menu ul {
+        list-style-type: none;
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+
+    #main-menu ul li {
+        margin-right: 20px; /* Adjust spacing between menu items */
+    }
+
+    /* Reset individual menu item styles */
+    #main-menu ul li a {
+        padding: 0; /* Reset padding */
+        color: white; /* Reset text color */
+    }
+
+    /* Style for the menu items in fullscreen mode on hover */
+    #main-menu ul li a:hover {
+        color: blue; /* Text color on hover in fullscreen mode */
+    }
+}

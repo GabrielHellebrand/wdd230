@@ -1,28 +1,35 @@
-/* Hamburger Button Styles */
-.hamburger-menu {
-    display: none; /* Initially hide in non-mobile view */
+#main-menu {
+    display: none; /* Hide the menu by default */
+    position: absolute;
+    top: 60px; /* Adjust the top position as needed */
+    right: 0;
+    background-color: #333; /* Dark background color */
+    border: 1px solid #222; /* Dark border */
+    padding: 10px;
+    z-index: 1; /* Ensure the menu appears above other elements */
+}
+
+#main-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+#main-menu ul li {
+    margin-bottom: 10px;
+}
+
+#main-menu a {
+    text-decoration: none;
+    color: #fff; /* White text color */
+    display: block; /* Make the entire list item clickable */
+    padding: 5px; /* Add some padding to the menu items */
+}
+
+#main-menu a:hover {
+    background-color: #007bff; /* Blue highlight on hover */
+    color: #fff; /* White text color on hover */
+}
+
+#menu-toggle {
     cursor: pointer;
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 1000;
-}
-
-.hamburger-icon {
-    font-size: 24px;
-    color: #333; /* Customize the color */
-}
-/* Show the menu when the hamburger button is clicked */
-.main-menu.show-menu {
-    display: block;
-}
-
-/* Media query to hide the menu by default in non-mobile view */
-@media (min-width: 768px) {
-    .main-menu {
-        display: block !important; /* Important to override previous styles */
-    }
-    .hamburger-menu {
-        display: none;
-    }
 }
