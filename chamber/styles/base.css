@@ -196,3 +196,30 @@ nav ul {
     margin-block-start: 0px;
     background-color: var(--dark-background-color); /* Set the default background color to dark mode */
 }
+#discover-main {
+    display: flex; /* Use flexbox to create a horizontal layout */
+}
+
+#discover-sidebar {
+    flex: 1; /* Make the demographics section take up 50% of the available width */
+    padding: 20px; /* Add padding for spacing */
+    background-color: grey; /* You can adjust the background color */
+}
+
+#discover-images {
+    flex: 1; /* Make the images section take up 50% of the available width */
+    padding: 20px; /* Add padding for spacing */
+    background-color: grey /* You can adjust the background color */
+}
+
+#discover-demographics, #discover-message {
+    border: 1px solid black;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+#discover-images img {
+    border: 5px solid var(--hover-background-color);
+    max-width: 100%; /* Ensure images don't exceed the container width */
+}
+    
