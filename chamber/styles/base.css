@@ -207,7 +207,7 @@ nav ul {
 }
 
 #discover-images {
-    flex: 1; /* Make the images section take up 50% of the available width */
+    flex: 2; /* Make the images section take up 50% of the available width */
     padding: 20px; /* Add padding for spacing */
     background-color: grey /* You can adjust the background color */
 }
