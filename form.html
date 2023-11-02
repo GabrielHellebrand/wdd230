@@ -14,6 +14,7 @@
     <link rel="icon"       href="favicon.ico"/>
     <link rel="stylesheet" href="styles/menu.css">
     <link rel="stylesheet" href="styles/homepage.css">
+    <link rel="stylesheet" href="styles/form.css">
 
 </head>
 <body>
@@ -39,31 +40,32 @@
         </ul>
     </div>
 
-    <main>
-        <h2 class="underline">WDD 230: <u>Web Frontend Development</u></h2>
+    <main id="form-main">
+        <form>
+            <fieldset>
+                <p><span id="message"</span</p>
+            <label>Username: <input id="username" name="username" type ="text" required></label>
+            <label>Password: <input id="password" name="password" type ="password" required pattern="[\d][\w]{8,}"></label>
+            <label>Confirm: <input id="confirm" name="confirm" type ="password" required></label>
+            <label>Email: <input id="email" name="email" type ="email" required pattern="[\w\.]+@byui\.edu$"Placeholder="email, plz"title="Please enter a valid email address"></label>
+            <label>Page Rating: <span id=""currentrating> </span><input id="rating" name="rating" type ="range" min="1" max="10" step="1" value="1"></label>
+            <datalist id="slidervalues">
+                <option value="="1">1</option>
+                <option value="="2">2</option>
+                <option value="="3">3</option>
+                <option value="="4">4</option>
+                <option value="="5">5</option>
+                <option value="="6">6</option>
+                <option value="="7">7</option>
+                <option value="="8">8</option>
+                <option value="="9">9</option>
+                <option value="="10">10</option>
+            </datalist>
+            <button> Join Now Please!!!</button>
+        </fieldset>
+        </form>
 
-        <section class="card blue-bg learning-activities">
-            <h3>Learning Activities</h3>
-            <ul>
-                <li><a href="#" class="white-bg">Week 1</a></li>
-                <li><a href="#" class="white-bg">Week 2</a></li>
-                <li><a href="#" class="white-bg">Week 3</a></li>
-            </ul>
-        </section>
 
-        <section class="card blue-bg information">
-            <h3>Information</h3>
-            <p class="white-bg">Weather: [Weather Placeholder]</p>
-            <p class="white-bg">Visits: [Visits Placeholder]</p>
-            <picture>
-                <source media="(min-width: 961px)" srcset="./chamber/images/temple-large.jpg">
-                <img src="./chamber/images/temple-mobile.jpg" alt="San Diego Temple">
-            
-        </section>
-    </picture>
-    <div class="overlay">San Diego Temple</div>
-    </main>
-    <iframe src="https://www.google.com/maps/place/Hesperia,+CA/@34.3872466,-117.4196011,12z/data=!4m15!1m8!3m7!1s0x80c34214ff1bcc27:0xd1ab6cbff25983e3!2s10420+Jenny+St,+Oak+Hills,+CA+92344!3b1!8m2!3d34.3718881!4d-117.4349215!16s%2Fg%2F11kpryjxcf!3m5!1s0x80c35d0ec347107f:0x703e35af9583a20!8m2!3d34.4263886!4d-117.3008784!16zL20vMHI0aHc?authuser=0&entry=ttu" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     <footer>
         <p>&copy; <span id="currentYear"></span> Gabriel Hellebrand, California, United States</p>
         <p id="lastModified"></p>

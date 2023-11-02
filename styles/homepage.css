@@ -175,3 +175,89 @@ nav a {
     font-size: 18px;
     white-space: nowrap; /* Prevent text from wrapping */
   }
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* Reset some default browser styles */
+body, h1, h2, h3, ul, ol, li, p, figure, figcaption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Reset list styling */
+ul, ol {
+    list-style: none;
+}
+
+/* Reset font styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Apply basic styles */
+body {
+    background-color: green;
+    color: #333;
+}
+
+/* Reset anchor styles */
+a {
+    text-decoration: none;
+    color: #0073e6;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Reset header styles */
+h1, h2, h3 {
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+}
+
+/* Reset header margins */
+h1, h2, h3 {
+    margin: 0;
+}
+
+/* Reset header and list margins in main content */
+main {
+    margin: 0;
+    padding: 20px;
+}
+
+/* Reset header and list margins in cards */
+.card {
+    margin: 0;
+    padding: 20px;
+}
+
+/* Set a maximum width for main content */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    main {
+        max-width: 90%;
+    }
+}

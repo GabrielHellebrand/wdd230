@@ -220,6 +220,8 @@ nav ul {
 
 #discover-images img {
     border: 5px solid var(--hover-background-color);
-    max-width: 100%; /* Ensure images don't exceed the container width */
+    max-width: auto; /* Ensure images don't exceed the container width */
+    height: auto
+
 }
     
