@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce</title>
+    <link rel="stylesheet" href="./styles/base.css">
+    <script src="./scripts/localstorage.js" defer></script>
+    <script src="./scripts/menu.js" defer></script>
+    <script src="./scripts/windchill.js" defer></script>
+
+    
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <img src="./images/logo.png" alt="Logo">
+            <!-- Add your navigation menu items here -->
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Members</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#">Contact Us</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <body>
+        <h1>Membership Application</h1>
+        <form method="get" action="thankyou.html">
+            <label for="firstName">Applicant's First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+    
+            <label for="lastName">Applicant's Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+    
+            <label for="position">Applicant's Title/Position:</label>
+            <input type="text" id="position" name="position" pattern="[A-Za-z -]{7,}" title="Only alpha characters, hyphens, and spaces with a minimum of seven characters are allowed" >
+    
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required placeholder="example@example.com">
+    
+            <label for="phone">Mobile Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+    
+            <label for="organization">Business/Organization Name:</label>
+            <input type="text" id="organization" name="organization" required>
+    
+            <label for="membership">Membership Level:</label>
+            <select id="membership" name="membership">
+                <option value="NP Membership">NP Membership (No Fee)</option>
+                <option value="Bronze Membership">Bronze Membership</option>
+                <option value="Silver Membership">Silver Membership</option>
+                <option value="Gold Membership">Gold Membership</option>
+            </select>
+    
+            <label for="description">Business/Organization Description:</label>
+            <textarea id="description" name="description"></textarea>
+    
+            <input type="hidden" id="timestamp" name="timestamp">
+            
+            <button type="submit">Submit</button>
+        </form>
+    
+        <div class="membership-benefits">
+            <!-- Display membership level benefits here -->
+        </div>
+    </body>
+   
+    <!-- Footer -->
+    <footer>
+        <!-- Contact information and additional details go here -->
+        <h2>Contact Us</h2>
+        <p>Email: contact@example.com</p>
+        <p>Phone: +123-456-7890</p>
+        <address>
+            <p>123 Main Street</p>
+            <p>Hesperia, CA, 92344</p>
+        </address>
+    </footer>
+    <div id="dark-mode-toggle" class="toggle-switch">
+        <label for="dark-mode-checkbox">Dark Mode</label>
+        <input type="checkbox" id="dark-mode-checkbox">
+    </div>
+</body>
+</html>
