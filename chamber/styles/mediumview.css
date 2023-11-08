@@ -1,0 +1,20 @@
+@media screen and (min-width=700px){
+    #nav-button{
+        display: none;
+    }
+    #nav-menu{
+        display: flex;
+        flex-direction: row;
+    }
+    #nav-menu.showing{
+        display: flex;
+    }
+    #discover-sidebar{
+        border-right: 5px solid black;
+        padding: 1rem;
+    }
+    #discover-main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}

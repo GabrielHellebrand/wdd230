@@ -141,5 +141,6 @@ footer {
     /* Style for the menu items in fullscreen mode on hover */
     #main-menu ul li a:hover {
         color: blue; /* Text color on hover in fullscreen mode */
+        
     }
 }

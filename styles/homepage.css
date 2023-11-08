@@ -258,6 +258,6 @@ main {
 /* Responsive styles */
 @media (max-width: 768px) {
     main {
-        max-width: 90%;
+        max-width: 100%;
     }
 }

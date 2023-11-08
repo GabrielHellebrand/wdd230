@@ -1,0 +1,38 @@
+{
+    "name": "Hellebrand", 
+    "moveInDate": "2022/08/01",
+    "familySize": 5,
+    "visited": false,
+    "members": [
+        {
+            "name": "Robert",
+            "gender": "M",
+            "birthdate": "1965/11/01"
+            
+        },
+        {
+            "name": "Sandra",
+            "gender": "F",
+            "birthdate": "1968/04/06"
+            
+        },
+        {
+            "name": "Gabriel",
+            "gender": "M",
+            "birthdate": "1997/08/21"
+            
+        },
+        {
+            "name": "Silas",
+            "gender": "M",
+            "birthdate": "2000/04/14"
+            
+        },
+        {
+            "name": "Eve",
+            "gender": "F",
+            "birthdate": "2003/01/11"
+            
+        }
+    ]
+}
