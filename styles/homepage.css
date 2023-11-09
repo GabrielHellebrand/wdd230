@@ -27,10 +27,15 @@ header h1 {
 }
 
 /* Style the navigation */
-nav {
+nav 
+{
     background-color: black;
     padding: 10px 0;
+    display: flex; /* Add display: flex; to create a horizontal menu */
+    justify-content: center; /* Center the menu horizontally */
 }
+    
+
 
 nav ul {
     list-style-type: none;
@@ -261,3 +266,25 @@ main {
         max-width: 100%;
     }
 }
+.hero {
+    position: relative; /* Make the .hero container a positioning context for child elements */
+  }
+  
+  #temple-text {
+    position: absolute;
+    top: 50%; /* Vertically align text in the middle */
+    left: 50%; /* Horizontally align text in the middle */
+    transform: translate(-50%, -50%); /* Center text within .hero */
+    background-color: rgba(0, 0, 0, 0.7); /* Add a semi-transparent background to improve text visibility */
+    color: #fff; /* Text color */
+    padding: 10px 20px; /* Add some padding to the text */
+    font-size: 24px; /* Adjust the font size as needed */
+    text-align: center; /* Center-align text */
+    z-index: 1; /* Ensure the text is above the image */
+  }
+  
+  @media (max-width: 768px) {
+    #temple-text {
+      font-size: 18px; /* Adjust font size for smaller screens if needed */
+    }
+  }

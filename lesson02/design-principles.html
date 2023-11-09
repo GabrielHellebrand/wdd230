@@ -3,7 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <title>Design Principles Showcase</title>
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media screen and (max-width: 1050px) {
+            main {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .card {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .card {
+                grid-column: span 2;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -18,7 +69,7 @@
             <!-- Website hyperlink -->
             <a href="https://letterboxd.com/films/">Visit Website</a>
             <!-- Screenshot image (for demonstration) -->
-            <img src="../lesson2/images/Hick's Law example.png" alt="Letterboxd">
+            <img src="../lesson02/images/Hick's Law example.png" alt="Letterboxd">
             <!-- Description of the design principle -->
         <p>The reason why this is an example of Hick's law is because there are hundreds of thousands of movies</p>
         <p>out there and this feature on the website eliminates it down to the 20 most popular movies from that week</p>

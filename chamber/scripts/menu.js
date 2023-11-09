@@ -1,7 +1,11 @@
-function toggleMenu() {
-    var menu = document.getElementById("main-menu");
-    menu.style.display = (menu.style.display === "block") ? "none" : "block";
-}
+const menuButton = document.getElementById("hamburger-menu-button");
+const menuList = document.querySelector("ul");
+
+menuButton.addEventListener("click", function () {
+  menuButton.classList.toggle("active");
+  menuList.classList.toggle("active");
+});
+
 
 function toggleDarkMode() {
     var body = document.body;
