@@ -1,4 +1,73 @@
-"members"
 {
-    
-}
+    "members": [
+      {
+        "name": "Civic Plaza 12",
+        "address": "9711 9th Ave, Hesperia, CA 92345",
+        "phone": "(760) 995-3655",
+        "website": "https://www.fandango.com/civic-plaza-12-cinema-aawux/theater-page?format=all",
+        "image": "Civic Plaza 12 logo.png",
+        "membershipLevel": "Gold",
+        "otherInfo": "Local movie theater that shows new releases."
+      },
+      
+      {
+        "name": "Target",
+        "address": "12795 Main St, Hesperia, CA 92345",
+        "phone": "(760) 949-3062",
+        "website": "https://www.target.com/sl/hesperia/2468",
+        "image": "target.png",
+        "membershipLevel": "Silver",
+        "otherInfo": "A grocery store that has groceries and clothing."
+      },
+      
+      {
+        "name": "In-N-Out Burger",
+        "address": "17069 Bear Valley Rd, Hesperia, CA 92345",
+        "phone": "(800) 786-1000",
+        "website": "https://locations.in-n-out.com/72",
+        "image": "in-n-out.png",
+        "membershipLevel": "Gold",
+        "otherInfo": "The most famous restaurant to come out of California, there's like 5 of them in Hesperia."
+      },
+      
+      {
+        "name": "Stater Bros",
+        "address": "14466 Main St, Hesperia, CA 92345",
+        "phone": "(760) 244-2299",
+        "website": "https://www.staterbros.com",
+        "image": "stater bros.png",
+        "membershipLevel": "Silver",
+        "otherInfo": "A pretty good grocery store, there's two Stater Brothers across the street from each other."
+      },
+      
+      {
+        "name": "Habit",
+        "address": "13325 Main St, Hesperia, CA 92345",
+        "phone": "(760) 995-4159",
+        "website": "https://www.habitburger.com/menu/",
+        "image": "habit.png",
+        "membershipLevel": "Gold",
+        "otherInfo": "Great restaurant, in my opinion better than in-n-out."
+      },
+      
+      {
+        "name": "Menchie's",
+        "address": "12719 Main St Ste 410, Hesperia, CA 92345",
+        "phone": "(760) 662-5777",
+        "website": "https://www.menchies.com/frozen-yogurt-flavors",
+        "image": "menchie's.png",
+        "membershipLevel": "Gold",
+        "otherInfo": "Great Frozen Yogurt place."
+      },
+      
+      {
+        "name": "Cracker Barrel",
+        "address": "11612 Amargosa Rd, Victorville, CA 92392",
+        "phone": "(760) 244-0010",
+        "website": "https://www.crackerbarrel.com/menu/?utm_source=google&utm_medium=maps&utm_campaign=menu#",
+        "image": "cracker barrel.png",
+        "membershipLevel": "Gold",
+        "otherInfo": "The only Cracker Barrel in Southern California, located in the next town over, Victorville."
+      }
+    ]
+  }

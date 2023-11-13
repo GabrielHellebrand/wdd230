@@ -3,9 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Chamber of Commerce</title>
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/largeview.css">
+    <link rel="stylesheet" href="./styles/mediumview.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <script src="./scripts/localstorage.js" defer></script>
+    <script src="./scripts/menu.js" defer></script>
+    <script src="./scripts/windchill.js" defer></script>
+    <script src="./scripts/members.js" defer></script>
+    
 </head>
 <body>
-    
+    <!-- Header -->
+    <header>
+        <nav>
+            <button id="hamburger-menu-button" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <img src="./images/logo.png" alt="Logo">
+            
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./join.html">Join</a></li>
+                <li><a href="./testimonials.html">Testimonials</a></li>
+                <li><a href="./discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <!-- Main Content -->
+<main id="main-content">
+    <section id="members" class="grid-view">
+        <!-- Member cards or list items go here -->
+        <main>
+            <div class="menu">
+                <button id="grid">⏹️Grid</button>
+                <button id="list">📄List</button>
+            </div>
+            <hr>
+            <article class="grid">
+                <section>
+                    <img src="./images/Civic Plaza 12 logo.png" alt="Civic Plaza 12" />
+                    <h3>Civic Plaza 12</h3>
+                    <a href="https://www.fandango.com/civic-plaza-12-cinema-aawux/theater-page?format=all" target="_blank">Details</a>
+                </section>
+        
+                <section>
+                    <img src="./images/target.png" alt="Target" />
+                    <h3>Target</h3>
+                    <a href="https://www.target.com/sl/hesperia/2468" target="_blank">Details
+                    </a>
+                </section>
+        
+                <section>
+                    <img src="./images/in-n-out.png" alt="In-N-Out" />
+                    <h3>In-N-Out</h3>
+                    <a href="https://locations.in-n-out.com/72" target="_blank">Details </a>
+                </section>
+        
+                <section>
+                    <img src="./images/stater bros.png" alt="Stater Bros" />
+                    <h3>Stater Bros</h3>
+                    <a href="https://www.staterbros.com" target="_blank">Details</a>
+                </section>
+        
+                <section>
+                    <img src="../chamber/images/habit.png" alt="Habit" />
+                    <h3>Habit</h3>
+                    <a href="https://www.habitburger.com/menu/" target="_blank">Details</a>
+                </section>
+        
+                <section>
+                    <img src="../chamber/images/menchie's.png" alt="Menchie's" />
+                    <h3>Menchie's</h3>
+                    <a href="https://www.menchies.com/frozen-yogurt-flavors" target="_blank">Details</a>
+                </section>
+        
+                <section>
+                    <img src="../chamber/images/cracker barrel.png" alt="Cracker Barrel" />
+                    <h3>Cracker Barrel</h3>
+                    <a href="https://www.crackerbarrel.com/menu/?utm_source=google&utm_medium=maps&utm_campaign=menu#" target="_blank">Details</a>
+                </section>
+            </article>
+        </main>
+    </section>
+    <button id="toggle-view-button">Toggle View</button>
+</main>
+
+        
+   
+    <!-- Footer -->
+    <footer>
+        <!-- Contact information and additional details go here -->
+        <h2>Contact Us</h2>
+        <p>Email: contact@example.com</p>
+        <p>Phone: +123-456-7890</p>
+        <address>
+            <p>123 Main Street</p>
+            <p>Hesperia, CA, 92344</p>
+        </address>
+    </footer>
+    <div id="dark-mode-toggle" class="toggle-switch">
+        <label for="dark-mode-checkbox">Dark Mode</label>
+        <input type="checkbox" id="dark-mode-checkbox">
+    </div>
 </body>
 </html>
