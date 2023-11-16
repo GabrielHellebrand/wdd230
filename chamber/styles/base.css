@@ -51,6 +51,7 @@ footer{
     margin: 0 auto;
     text-align: center;
     padding: 2rem;
+    background-color: black;
 }
 
 /** Different Menu styles **/
@@ -107,6 +108,7 @@ image-container{
 }
 #hero img {
     width: 100%; /* Ensure the image scales appropriately */
+    height: auto;
 }
 
 #hero button {
@@ -139,7 +141,7 @@ image-container{
 #home-main section{
     text-align: center;
     border: 2px solid black;
-    box-shadow: 10px 10px 10px 10px grey;
+    box-shadow: 10px 10px 10px 10px black;
     margin: 1rem; 
 }
 #home-main section p{
@@ -160,7 +162,7 @@ image-container{
     text-align: center;
 }
 #nav-menu.showing{
-    display: block;
+    display: flex;
 }
 /* The styles here are for the discover page */
 #discover-main{
@@ -306,24 +308,6 @@ nav ul {
     background-color: grey; /* potentially adjust the background color */
 }
 
-#discover-images {
-    flex: 2; 
-    padding: 20px; /* Add padding for spacing */
-    background-color: grey /* potentially adjust the background color */
-}
-
-#discover-demographics, #discover-message {
-    border: 1px solid black;
-    padding: 1rem;
-    margin: 1rem 0;
-}
-
-#discover-images img {
-    border: 5px solid var(--hover-background-color);
-    max-width: auto; /* Ensure images don't exceed the container width */
-    height: auto
-
-}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -432,63 +416,39 @@ button[type="submit"] {
     transition: 0.4s;
   }
   
-  
-  @media screen and (min-width: 1024px) {
-    .spotlight-card {
-        display: flex;
-        justify-content: space-between;
-        margin: 20px;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-
-    .spotlight-item {
-        width: 30%; /* Adjust the width as needed */
-        box-sizing: border-box; /* Include padding and border in the width */
-        margin: 20px;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-
-    .spotlight-item img {
-        width: 100%;
-        height: auto;
-        margin: 20px;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
+  .spotlight-card {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    margin: 20px;
 }
 
-/* Medium view */
-@media screen and (max-width: 1023px) and (min-width: 768px) {
-    .spotlight-card {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin: 20px;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
-    }
-
-    .spotlight-item {
-        width: 48%; 
-        box-sizing: border-box; 
-        margin-bottom: 20px;
-        margin: 20px;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 2fr)); 
-    }
-
-    .spotlight-item img {
-        width: 100%;
-        height: auto;
-        margin: 20px;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
-    }
+.spotlight-item {
+    text-align: center;
 }
 
-/* Small view */
-@media screen and (max-width: 767px) {
-    .spotlight-item {
-        width: 100%;
-        margin-bottom: 20px;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
-    }
+.spotlight-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add box shadow for a subtle lift effect */
+}
+
+/* Adjust discover-images styles */
+#discover-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+    background-color: grey; /* Adjust the background color if needed */
+}
+
+#discover-images img {
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--hover-background-color);
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add box shadow for a subtle lift effect */
 }
 /* Discover page styles */
     * {
