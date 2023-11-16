@@ -10,7 +10,7 @@
     grid-column: 1/3;
     display: flex;
    }
-   .spotlight-card{
+   .spotlightcard{
     flex: 1
    }
    footer{
@@ -21,7 +21,7 @@
     grid-column: 1/3;
     width: 100%;
    }
-   .footer-logo{
+   .footerlogo{
         text-align: right;
    }
 }

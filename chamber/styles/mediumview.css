@@ -1,19 +1,19 @@
 @media screen and (min-width=700px){
-    #nav-button{
+    #navbutton{
         display: none;
     }
-    #nav-menu{
+    #navmenu{
         display: flex;
         flex-direction: row;
     }
-    #nav-menu.showing{
+    #navmenu.showing{
         display: flex;
     }
-    #discover-sidebar{
+    #discoversidebar{
         border-right: 5px solid black;
         padding: 1rem;
     }
-    #discover-main{
+    #discovermain{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
