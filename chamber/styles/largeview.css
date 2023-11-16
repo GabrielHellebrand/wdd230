@@ -1,4 +1,4 @@
-@media screen and (min-width = 1200px) {
+@media screen and (min-width: 1200px) {
     #home-main{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -11,7 +11,7 @@
     display: flex;
    }
    .spotlight-card{
-    flex: 1
+    flex: 1;
    }
    footer{
     display: grid;
