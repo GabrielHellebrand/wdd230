@@ -33,5 +33,68 @@ async function getTheWeather() {
     console.log(error);
   }
 }
+     // OpenWeatherMap API key
+     const apiKey = 'a210d786daa3fb047488bb9d19cf6fb5';
+    
+     const lat = '43.830043';
+     const lon = '-111.829468';
+
+     // Function to get the current weather
+     function getCurrentWeather() {
+         const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=43.830043&lon=-111.829468&appid=a210d786daa3fb047488bb9d19cf6fb5&units=imperial`;
+
+         $.get(apiUrl, function (data) {
+             const currentTemp = data.main.temp;
+             const weatherDescription = data.weather[0].description;
+
+             // Display current weather data
+             $('#current-temp').text(`Current Temperature: ${currentTemp}°C`);
+             $('#current-description').text(`Current Weather: ${weatherDescription}`);
+         });
+     }
+
+     // Function to get the 3-day forecast
+     function getThreeDayForecast() {
+         const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=43.830043&lon=-111.829468&appid=a210d786daa3fb047488bb9d19cf6fb5&units=imperial`;
+
+         $.get(forecastUrl, function (data) {
+             const forecastList = $('#forecast-list');
+
+             // Clear previous forecast data
+             forecastList.empty();
+
+             // Display 3-day forecast data
+             for (let i = 0; i < 3; i++) {
+                 const timestamp = data.list[i * 8].dt;
+                 const date = new Date(timestamp * 1000);
+                 const temperature = data.list[i * 8].main.temp;
+
+                 const listItem = `<li>${date.toDateString()}: ${temperature}°C</li>`;
+                 forecastList.append(listItem);
+             }
+         });
+     }
+
+     // Function to show/hide the chamber banner based on the day of the week
+     function updateChamberBanner() {
+         const today = new Date();
+         const dayOfWeek = today.getDay();
+
+         if (dayOfWeek >= 1 && dayOfWeek <= 3) { // Monday, Tuesday, or Wednesday
+             $('#chamber-banner').removeClass('hide');
+         } else {
+             $('#chamber-banner').addClass('hide');
+         }
+     }
+
+     // Function to close the chamber banner
+     $('#close-banner').click(function () {
+         $('#chamber-banner').addClass('hide');
+     });
+
+     // Initial setup
+     getCurrentWeather();
+     getThreeDayForecast();
+     updateChamberBanner();
 
 getTheWeather();
