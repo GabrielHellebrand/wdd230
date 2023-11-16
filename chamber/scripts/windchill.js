@@ -15,3 +15,4 @@ function showWindChill(temp, speed){
     showWindChill(temp, windspeed);
 
 }
+const url = "https://api.openweathermap.org/data/2.5/weather?lat={43.830043}&lon={-111.829468}&appid={a210d786daa3fb047488bb9d19cf6fb5}&units=imperial"

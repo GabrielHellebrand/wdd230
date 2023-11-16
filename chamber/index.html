@@ -40,11 +40,9 @@
         <section id="hero">
             <!-- Hero image and Call to Action (CTA) go here -->
             <div class="image-container">
-                <img src="./images/restaurants.png" alt="Hero Image" width="800" height="450">
+                <img src="./images/restaurants.png" alt="Hero Image" width="800" height="600">
             </div>
-            <!-- <source media="(max-width: 720px)" srcset="./images/wdd23-small.jpg">
-            <source media="(max-width: 961px)" srcset="./images/wdd23-medium.jpg">
-            <img src="../images/wdd230-org.jpg" alt="wdd230-org"> -->
+     
             <h1>Welcome to the Hesperia Chamber of Commerce</h1>
             <p>Your one-stop destination for business resources. Whether you run a small buisness or a franchise, Hesperia Chamber of Commerce is here for you</p>
             <a href="#" class="cta-button">Learn More</a>
@@ -82,28 +80,34 @@
            
         </section>
 
-        <section id="spotlights">
-            <!-- Spotlights or featured content goes here -->
-            <h2>Spotlights</h2>
-            <!-- Add featured content items here -->
+        <h2>Spotlights</h2>
+        <div class="spotlight-card">
             <div class="spotlight-item">
-                <img src="./images/Hesperia City Hall.jpeg" alt="Hesperia City Hall">
+                <img src="./images/Hesperia City Hall.jpeg" alt="Hesperia City Hall" width = "400" height = "300" >
                 <h3>Hesperia City Hall</h3>
                 <p>This is the City Hall, it's right next to the library.</p>
             </div>
+        </div>
+
+        <div class="spotlight-card">
             <div class="spotlight-item">
-                <img src="./images/Civic Plaza 12" alt="Civic Plaza 12">
+                <img src="./images/Civic Plaza 12" alt="Civic Plaza 12" width = "400" height = "300">
                 <h3>Civic Plaza 12</h3>
                 <p>My favorite local movie theater, the building had to get permits because of earthquakes to put in two eight story high IMAX theaters.</p>
             </div>
+        </div>
+
+        <div class="spotlight-card">
             <div class="spotlight-item">
-                <img src="./images/Chamber of Commerce.png" alt="Chamber of Commerce">
+                <img src="./images/Chamber of Commerce.png" alt="Chamber of Commerce" width = "400" height = "300">
                 <h3>Hesperia Chamber of Commerce</h3>
                 <p>This is the chamber of commerce for my hometown, I showed a friend of mine this picture and he told me that it looked like a Mexican restaurant.</p>
             </div>
-                <p><span class="label">Number of Visits: </span><span class="visits" id="visits"></span></p>
+        </div>
 
-        </section>
+        <p><span class="label">Number of Visits: </span><span class="visits" id="visits"></span></p>
+    </section>
+</main>
     </main>
    
     <!-- Footer -->

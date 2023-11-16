@@ -95,6 +95,16 @@ nav ul li a:hover{
 #hero {
    position: relative;
 }
+image-container{
+    width: 100%;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    font-size: 1.5rem;
+    padding: .5rem;
+    border: 5px solid yellow;
+    border-radius: 10px;
+}
 #hero img {
     width: 100%; /* Ensure the image scales appropriately */
 }
@@ -365,13 +375,13 @@ button[type="submit"] {
     justify-content: space-between;
     padding: 20px;
 }
-.spotlights {
+.membershipspotlights {
     display: flex;
     justify-content: center;
     align-items: center; 
 }
 
-.spotlight-item {
+.membershipspotlight-item {
     text-align: center;
     margin: 1rem;
 }
@@ -423,30 +433,69 @@ button[type="submit"] {
   }
   
   
-  @media (max-width: 768px) {
-    #hamburger-menu-button {
-      display: block;
+  @media screen and (min-width: 1024px) {
+    .spotlight-card {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
-  
-    ul {
-      display: none;
+
+    .spotlight-item {
+        width: 30%; /* Adjust the width as needed */
+        box-sizing: border-box; /* Include padding and border in the width */
+        margin: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
-  
-    ul.active {
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      right: 0;
-      background: #fff; /* Background color for the menu */
-      border: 1px solid #ddd; /* Border color for the menu */
-      z-index: 1;
+
+    .spotlight-item img {
+        width: 100%;
+        height: auto;
+        margin: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
+}
+
+/* Medium view */
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .spotlight-card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    }
+
+    .spotlight-item {
+        width: 48%; 
+        box-sizing: border-box; 
+        margin-bottom: 20px;
+        margin: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 2fr)); 
+    }
+
+    .spotlight-item img {
+        width: 100%;
+        height: auto;
+        margin: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    }
+}
+
+/* Small view */
+@media screen and (max-width: 767px) {
+    .spotlight-item {
+        width: 100%;
+        margin-bottom: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
+    }
+}
+/* Discover page styles */
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        
     }
     
     main {
@@ -500,11 +549,6 @@ button[type="submit"] {
         font-family: "Caveat", cursive;
     }
     
-    .list {
-        display: flex;
-        flex-direction: column;
-    }
-    
     .list section {
         display: grid;
         grid-template-columns: 2fr 1fr 1fr;
@@ -547,7 +591,7 @@ button[type="submit"] {
     
     img {
         height: 75px;
-        max-width: 100%; /* Images are jerks - Seattle*/
+        max-width: 100%;
     }
 .grid {
     display: grid;
@@ -571,34 +615,4 @@ button[type="submit"] {
 
 .grid h3 {
     font-family: "Caveat", cursive;
-}
-
-.list {
-    display: flex;
-    flex-direction: column;
-}
-
-.list section {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    margin: 0;
-    padding: 0.25rem;
-}
-
-.list section > * {
-    margin: 0 1rem;
-}
-
-.list section img {
-    display: none; /* smaller viewports only */
-}
-
-.list section h3 {
-    font-size: 1rem;
-    font-family: Roboto, Helvetica, sans-serif;
-}
-
-.list section:nth-child(even) {
-    background-color: #bed;
-}
-  }
+} 
