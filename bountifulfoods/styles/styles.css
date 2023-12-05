@@ -1,0 +1,159 @@
+body {
+  font-family: 'Cookie', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: #ff69b4; /* Pink */
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-list li {
+  margin: 0 15px;
+}
+
+.menu-icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.main-content {
+  padding: 20px;
+  background-color: #ff69b4; /* Pink */
+}
+
+.weather-card,
+.smoothie-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* Responsive layout adjustments */
+@media only screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-list {
+    margin-top: 10px;
+  }
+
+  .nav-list li {
+    margin: 10px 0;
+  }
+
+  .menu-icon {
+    order: -1; /* Move the menu icon to the left */
+  }
+
+  .call-to-action {
+    max-width: 100%;
+  }
+}
+
+/* Styles for the hamburger menu */
+@media only screen and (max-width: 768px) {
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px; /* Adjust as needed */
+    left: 0;
+    background-color: #ff69b4; /* Pink */
+  }
+
+  .nav-list.show {
+    display: flex;
+  }
+
+  .nav-list li {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .nav-list li a {
+    color:  white;
+    text-decoration: none;
+  }
+}
+
+.smoothie-container {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  text-align: center;
+  max-width: 200px; 
+  margin-bottom: 20px; 
+}
+
+.smoothie-image {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  max-width: 100%;
+  height: auto;
+}
+
+.responsive-image {
+  max-width: 50%;
+  max-height: auto;
+}
+
+footer {
+  background-color: #ffa500; /* Orange */
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resource-attribution ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-media-links a {
+  color: white;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.contact-info p {
+  margin: 0;
+}
+.call-to-action{
+  max-width: 50%;
+  max-height: fit-content;
+}
+.nav-list li a.active {
+  font-weight: bold; /* Make the active link bold */
+  color: pink; /* Set the color for the active link */
+}
+
+/* Add hover effect on navigation links */
+.nav-list li a:hover {
+  color: yellow; /* Change the text color when hovering */
+  text-decoration: underline; /* Underline the link when hovering */
+}
+#order-form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
