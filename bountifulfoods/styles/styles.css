@@ -84,7 +84,7 @@ header{
 }
 /* Menu Icon */
 .menuicon{
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -346,13 +346,18 @@ header{
   }
   .nav {
     padding: 14px 20px;
+    flex-direction: column;
+    text-align: center;
   }
   .logo {
     font-size: 1.25rem;
   }
   .menuicon{
     display: flex;
-
+    font-size: 2rem;
+    padding: 1rem;
+    color: white;
+    display: flex;
   }
   .navbar{
     position: absolute;
