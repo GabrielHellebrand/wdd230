@@ -96,15 +96,15 @@ header{
 .menuicon div{
   display: block;
   background: var(--maincolor);
-  height: 2px;
-  width: 23px;
+  height: 5px;
+  width: 25px;
   transition: 0.3s;
 }
 .move .line1 {
   transform: rotate(-45deg) translate(-5px, 5px);
 }
 .move .line2 {
-  opacity: 0;
+  opacity: 1;
 }
 .move .line3 {
   transform: rotate(45deg) translate(-5px, -5px);
