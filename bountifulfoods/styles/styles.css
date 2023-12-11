@@ -4,8 +4,6 @@
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
   scroll-padding-top: 3rem;
   font: var(--font2);
 }
@@ -64,14 +62,9 @@ header{
   column-gap: 1.5rem;
 }
 .navlink{
-  font-size: 0.88rem;
+  font-size: 1rem;
   color: var(--text-alter-color);
   font-family: var(--font1);
-  transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1)
-}
-.navlink:hover {
-  color: var(--backgroundcolor);
-  transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1)
 }
 .navicons{
   display: flex;
@@ -91,24 +84,14 @@ header{
   row-gap: 5px;
   cursor: pointer;
   z-index: 200;
-  transform: 0.3s;
 }
 .menuicon div{
   display: block;
   background: var(--maincolor);
   height: 5px;
   width: 25px;
-  transition: 0.3s;
 }
-.move .line1 {
-  transform: rotate(-45deg) translate(-5px, 5px);
-}
-.move .line2 {
-  opacity: 1;
-}
-.move .line3 {
-  transform: rotate(45deg) translate(-5px, -5px);
-}
+
 .home{
   min-height: 650px;
   display: grid;
@@ -140,7 +123,6 @@ header{
 .button span{
   font-family: var(--font2);
   color: var(--backgroundcolor);
-  text-transform: uppercase;
 }
 .button .bx{
   font-size: 20px;
@@ -148,7 +130,7 @@ header{
   color: var(--backgroundcolor);
   padding: 5px;
   border-radius: 50%;
-  transform: rotate(60deg);
+
 }
 .home-img{
   max-width: 560px;
@@ -261,10 +243,7 @@ header{
   border-radius: 50%;
   cursor: pointer;
 }
-.productinfo .bx:hover{
-  background: var(--maincolor);
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-}
+
 .footer{
   display: grid;
   grid-template-columns: repeat(4, auto);
@@ -363,20 +342,13 @@ header{
     position: absolute;
     top: 110%;
     left: 50%;
-    transform: translate(-50%);
-    width: 90vw;
     background: var(--textcolor);
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
     border-radius: 1rem;
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
-  }
-  .openmenu{
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+
   }
   .navlink{
     display: block;
@@ -460,7 +432,7 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-} */
+} 
 /* Responsive layout adjustments */
 /* @media only screen and (max-width: 768px) {
   nav {
