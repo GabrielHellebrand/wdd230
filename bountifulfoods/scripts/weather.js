@@ -25,7 +25,7 @@ async function getWeatherData() {
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
 
-    // This fetches and displays the forecast for 9:00 AM for the next three days
+    // This fetches and displays the forecast for 9:00 PM for the next three days
     const forecastResponse = await fetch(forecastUrl);
     const forecastData = await forecastResponse.json();
     const forecastDetails = document.getElementById('forecast-details');
