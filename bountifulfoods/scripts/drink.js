@@ -51,9 +51,9 @@ function getDrinkSubmissionInfo() {
       email: formData.get('email'),
       phone: formData.get('phone'),
       fruits: [
-        formData.get('fruit1'),
-        formData.get('fruit2'),
-        formData.get('fruit3'),
+        formData.get('fruit'),
+        formData.get('fruit'),
+        formData.get('fruit'),
       ],
       specialInstructions: formData.get('special-instructions'),
     };
@@ -75,7 +75,7 @@ function getDrinkSubmissionInfo() {
       <p><strong>Name:</strong> ${orderDetails.firstName}</p>
       <p><strong>Email:</strong> ${orderDetails.email}</p>
       <p><strong>Phone:</strong> ${orderDetails.phone}</p>
-      <p><strong>Fruits:</strong> ${orderDetails.fruits.join('fruit.json')}</p>
+      <p><strong>Fruits:</strong> ${orderDetails.fruits.join('./fruit.json')}</p>
       <p><strong>Special Instructions:</strong> ${orderDetails.specialInstructions}</p>
     `;
   }
@@ -134,9 +134,9 @@ document.getElementById('order-form').addEventListener('submit', function (event
     email: formData.get('email'),
     phone: formData.get('phone'),
     fruits: [
-      formData.get('fruit1'),
-      formData.get('fruit2'),
-      formData.get('fruit3'),
+      formData.get('fruit'),
+      formData.get('fruit'),
+      formData.get('fruit'),
     ],
     specialInstructions: formData.get('special-instructions'),
   };
