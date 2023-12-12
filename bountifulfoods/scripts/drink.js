@@ -1,20 +1,20 @@
-// Function to retrieve and display local drink submission information
-  function getDrinkSubmissionInfo() {
-    // use local storage or another method to store and retrieve this information
+// Function that retrieves and displays the local drink submissions.
+function getDrinkSubmissionInfo() {
+    // This uses local storage to store and retrieve the drink submission information.
     const drinkSubmissions = localStorage.getItem('drinkSubmissions') || 0;
     document.getElementById('drink-submission-info').textContent = `You've submitted ${drinkSubmissions} specialty drinks.`;
   }
   
-  // Event listener for the menu icon
+  // Here's an event listener for the menu icon
   document.querySelector('.menu-icon').addEventListener('click', () => {
-    // Toggle the visibility of the navigation menu
+    // This toggles the visibility of the navigation menu
     document.querySelector('.nav-list').classList.toggle('show');
   });
   
-  // Call functions to fetch data and display information
- 
+  // This fetches the data and displays the information about the drink submissions
   getDrinkSubmissionInfo();
-  // Add this function to fetch fruit data from fruit.json
+
+  // This should fetch the fruit data from fruit.json but it isn't doing that right now
   async function getFruitData() {
     try {
         const response = await fetch('./fruit.json');
@@ -38,14 +38,14 @@
     });
 
   }
-  // Update the event listener for form submission
+  // This updates the event listener for form submission
   document.getElementById('order-form').addEventListener('submit', function (event) {
     event.preventDefault();
   
-    // Collect form data
+    // This collects the form data
     const formData = new FormData(document.getElementById('order-form'));
   
-    // Build order object
+    // This builds the order
     const order = {
       firstName: formData.get('first-name'),
       email: formData.get('email'),
@@ -58,19 +58,19 @@
       specialInstructions: formData.get('special-instructions'),
     };
   
-    // Save order details in localStorage for order-confirmation page to access
+    // This saves the details of the order in localStorage so that the order-confirmation page has access to it
     localStorage.setItem('orderDetails', JSON.stringify(order));
   
-    // Navigate to order confirmation page
+    // This should navigate to the order confirmation page
     window.location.href = 'order-confirmation.html';
   });
   
-  // Add this function to display order details on order-confirmation.html
+  // This displays the order details on order-confirmation.html
   function displayOrderDetails() {
     const orderDetailsContainer = document.getElementById('order-details');
     const orderDetails = JSON.parse(localStorage.getItem('orderDetails'));
   
-    // Display order details on the page
+    // This displays the order details on the page
     orderDetailsContainer.innerHTML = `
       <p><strong>Name:</strong> ${orderDetails.firstName}</p>
       <p><strong>Email:</strong> ${orderDetails.email}</p>
@@ -80,52 +80,54 @@
     `;
   }
   
-  // Populate fruit options when the page loads
+  // This should populate the options for fruits when the page loads but it doesn't right now.
   populateFruitOptions();
   
-  // display order details on order-confirmation.html
+  // This recursively calls the display order details on order-confirmation.html
   displayOrderDetails();
-  // Function to display last modified date in the footer
+
+  // Function that displays the last modified date in the footer
 function displayLastModifiedDate() {
     const lastModifiedContainer = document.getElementById('last-modified');
     const lastModifiedDate = new Date(document.lastModified).toLocaleString();
     lastModifiedContainer.textContent = `Last Modified: ${lastModifiedDate}`;
   }
-// Get the current page URL
+// Get the URL for the current page
 const currentPage = window.location.pathname;
 
-// Find the corresponding link and add the "active" class
+// This finds the corresponding link and adds the "active" class
 document.querySelectorAll('.nav-list a').forEach(link => {
   if (link.getAttribute('href') === currentPage) {
     link.classList.add('active');
   }
 });
-// Function to increment and display the drink counter
+// Function that should increment and display the drink counter
 function incrementDrinkCounter() { 
-  // Get the current drink submissions count from localStorage
+
+  // This gets the current drink submissions count from the localStorage
   let drinkSubmissions = localStorage.getItem('drinkSubmissions') || 0;
 
-  // Increment the drink counter
+  // This increments the drink counter
   drinkSubmissions = parseInt(drinkSubmissions, 10) + 1;
 
-  // Update the localStorage with the new drink counter value
+  // This updates the localStorage with the new drink counter value
   localStorage.setItem('drinkSubmissions', drinkSubmissions);
 
-  // Display the updated drink counter on the page
+  // This displays the updated drink counter on the page
   document.getElementById('drink-submission-info').textContent = `You've submitted ${drinkSubmissions} specialty drinks.`;
 }
 
-// Call the function to display the initial drink counter on page load
+// This should call the function to display the initial drink counter on page load but it doesn't display
 getDrinkSubmissionInfo();
 
-// Event listener for the form submission
+// This is an event listener for the form submission
 document.getElementById('order-form').addEventListener('submit', function (event) {
   event.preventDefault(); 
 
-  // Call the function to increment and display the drink counter
+  // This calls the function to increment and display the drink counter but it doesn't display right now.
   incrementDrinkCounter();
 
-  // Collect form data and proceed with the order confirmation logic
+  // This collects the form data and proceeds with the order confirmation logic
   const formData = new FormData(event.target);
   const order = {
     firstName: formData.get('first-name'),
@@ -139,11 +141,11 @@ document.getElementById('order-form').addEventListener('submit', function (event
     specialInstructions: formData.get('special-instructions'),
   };
 
-  // Save order details in localStorage for order-confirmation page to access
+  // This saves the order details in localStorage for order-confirmation page to access
   localStorage.setItem('orderDetails', JSON.stringify(order));
 
-  // Navigate to order confirmation page
+  // This navigates to the order confirmation page
   window.location.href = 'order-confirmation.html';
 });
-  // Call the function to display last modified date when the page loads
+  // This calls the function to display the last modified date for when the page loads.
   displayLastModifiedDate();
