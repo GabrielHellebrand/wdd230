@@ -1,3 +1,4 @@
+// This gets the weather data and the api key information
 async function getWeatherData() {
   const apiKey = 'a210d786daa3fb047488bb9d19cf6fb5';
   const city = 'Carlsbad';
@@ -8,16 +9,16 @@ async function getWeatherData() {
     const response = await fetch(currentWeatherUrl);
     const data = await response.json();
 
-    // Convert Kelvin to Fahrenheit
+    // This converts Kelvin to Fahrenheit
     const tempFahrenheit = (data.main.temp - 273.15) * 9/5 + 32;
 
-    // Populate current weather details
+// This populates the current weather details with temperature, humidity, and condition, this doesn't display on the home screen
     document.getElementById('weather-details').innerHTML = `
       <p>Temperature: ${tempFahrenheit.toFixed(0)}°F</p>
       <p>Condition: ${data.weather[0].description}</p>
       <p>Humidity: ${data.main.humidity}%</p>`;
 
-    // Set up the weather icon
+    // Set up the weather icon  
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
     const desc = data.weather[0].description;
     let weatherIcon = document.getElementById("weather-icon");
