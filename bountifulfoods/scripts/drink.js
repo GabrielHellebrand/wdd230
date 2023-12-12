@@ -1,18 +1,18 @@
 // Function that retrieves and displays the local drink submissions.
-function getDrinkSubmissionInfo() {
-    // This uses local storage to store and retrieve the drink submission information.
-    const drinkSubmissions = localStorage.getItem('drinkSubmissions') || 0;
-    document.getElementById('drink-submission-info').textContent = `You've submitted ${drinkSubmissions} specialty drinks.`;
-  }
+// function getDrinkSubmissionInfo() {
+//     // This uses local storage to store and retrieve the drink submission information.
+//     const drinkSubmissions = localStorage.getItem('drinkSubmissions') || 0;
+//     document.getElementById('drink-submission-info').textContent = `You've submitted ${drinkSubmissions} specialty drinks.`;
+//   }
   
   // Here's an event listener for the menu icon
-  document.querySelector('.menu-icon').addEventListener('click', () => {
-    // This toggles the visibility of the navigation menu
-    document.querySelector('.nav-list').classList.toggle('show');
-  });
+  // document.querySelector('.menu-icon').addEventListener('click', () => {
+  //   // This toggles the visibility of the navigation menu
+  //   document.querySelector('.nav-list').classList.toggle('show');
+  // });
   
   // This fetches the data and displays the information about the drink submissions
-  getDrinkSubmissionInfo();
+  // getDrinkSubmissionInfo();
 
   // This should fetch the fruit data from fruit.json but it isn't doing that right now
   async function getFruitData() {
@@ -28,16 +28,21 @@ function getDrinkSubmissionInfo() {
  
   async function populateFruitOptions() {
     const fruitData = await getFruitData(); 
-    const selectElement = document.getElementById('fruit-selection');
- 
-    fruitData.forEach(fruit => {
-       const option = document.createElement('option');
-       option.value = fruit.name;
-       option.textContent = fruit.name;
-       selectElement.appendChild(option);
-    });
+      const selectElement = document.getElementById('fruit-selection1');}
+      async function populateFruitOptions() {
+        const fruitData = await getFruitData(); 
+          const selectElement = document.getElementById('fruit-selection2');}
+          async function populateFruitOptions() {
+            const fruitData = await getFruitData(); 
+              const selectElement = document.getElementById('fruit-selection3');}
+    // fruitData.forEach(fruit => {
+    //    const option = document.createElement('option');
+    //    option.value = fruit.name;
+    //    option.textContent = fruit.name;
+    //    selectElement.appendChild(option);
+    // });
 
-  }
+  // }
   // This updates the event listener for form submission
   document.getElementById('order-form').addEventListener('submit', function (event) {
     event.preventDefault();
@@ -71,18 +76,19 @@ function getDrinkSubmissionInfo() {
     const orderDetails = JSON.parse(localStorage.getItem('orderDetails'));
   
     // This displays the order details on the page
-    orderDetailsContainer.innerHTML = `
-      <p><strong>Name:</strong> ${orderDetails.firstName}</p>
-      <p><strong>Email:</strong> ${orderDetails.email}</p>
-      <p><strong>Phone:</strong> ${orderDetails.phone}</p>
-      <p><strong>Fruits:</strong> ${orderDetails.fruits.join('./fruit.json')}</p>
-      <p><strong>Special Instructions:</strong> ${orderDetails.specialInstructions}</p>
-    `;
-  }
+  //   orderDetailsContainer.innerHTML = `
+  //     <p><strong>Name:</strong> ${orderDetails.firstName}</p>
+  //     <p><strong>Email:</strong> ${orderDetails.email}</p>
+  //     <p><strong>Phone:</strong> ${orderDetails.phone}</p>
+  //     <p><strong>Fruits:</strong> ${orderDetails.fruits.join('./fruit.json')}</p>
+  //     <p><strong>Special Instructions:</strong> ${orderDetails.specialInstructions}</p>
+  //   `;
+  // }
   
   // This should populate the options for fruits when the page loads but it doesn't right now.
-  populateFruitOptions();
-  
+  populateFruitOptions('fruit-selection1');
+  populateFruitOptions('fruit-selection2');
+  populateFruitOptions('fruit-selection3');
   // This recursively calls the display order details on order-confirmation.html
   displayOrderDetails();
 
@@ -92,15 +98,6 @@ function displayLastModifiedDate() {
     const lastModifiedDate = new Date(document.lastModified).toLocaleString();
     lastModifiedContainer.textContent = `Last Modified: ${lastModifiedDate}`;
   }
-// Get the URL for the current page
-const currentPage = window.location.pathname;
-
-// This finds the corresponding link and adds the "active" class
-document.querySelectorAll('.nav-list a').forEach(link => {
-  if (link.getAttribute('href') === currentPage) {
-    link.classList.add('active');
-  }
-});
 // Function that should increment and display the drink counter
 function incrementDrinkCounter() { 
 
@@ -148,4 +145,5 @@ document.getElementById('order-form').addEventListener('submit', function (event
   window.location.href = 'order-confirmation.html';
 });
   // This calls the function to display the last modified date for when the page loads.
-  displayLastModifiedDate();
+  // displayLastModifiedDate();
+}
