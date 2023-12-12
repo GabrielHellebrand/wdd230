@@ -236,13 +236,13 @@ header{
   color: var(--maincolor);
   font-weight: 500;
 }
-.productinfo .bx{
+/* .productinfo .bx{
   padding: 8px;
   background: var(--secondcolor);
   color: var(--backgroundcolor);
   border-radius: 50%;
   cursor: pointer;
-}
+} */
 
 .footer{
   display: grid;
