@@ -28,6 +28,9 @@ a{
 img{
   width: 100%;
 }
+weather-icon{
+  width: 25%;
+}
 section{
   padding: 3rem 0 2rem;
 }

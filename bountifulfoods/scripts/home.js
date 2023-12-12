@@ -1,2 +1,0 @@
-// weather stuff
-// drink count
