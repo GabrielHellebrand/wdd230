@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Web Frontend Development course assignment portal for Gabriel Hellebrand. A resource for class activities, weather info, page visits, and learning materials.">
+    <meta name="author" content="Gabriel Hellebrand">
+
+    <!-- webpage title -->
+    <title> Gabriel Hellebrand - WDD 230 - Web Frontend Development</title>
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="./styles/base.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header with Profile -->
+    <header>
+        <img src="./images/profile picture.jpg" alt="Gabriel Hellebrand Profile picture" width="150" height="150">
+        <h1>Gabriel Hellebrand</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="chamber/">Chamber</a></li>
+            <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/your-favorite-scripture" target="_blank">Scripture</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <h2>WDD 230: Web Frontend Development</h2>
+
+        <!-- Activities -->
+        <section class="card">
+            <h3>Learning Activities</h3>
+            <ul>
+                <!-- Links to activities -->
+                <li><a href="#">Holy Layout</a></li>
+                <li><a href="#">JS Pen</a></li>
+                <li><a href="#">Media Query</a></li>
+                <li><a href="#">Design Principles Document</a></li>
+            </ul>
+        </section>
+
+        <!-- Information -->
+        <section class="card">
+            <h3>Information</h3>
+            <!-- Weather and Visit placeholder for later -->
+            <p>Weather information will eventually be displayed here.</p>
+            <p>Number of visits to the page will eventually be displayed here.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="copyright-year"></span> Gabriel Hellebrand, California/United States</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <!-- Link to JavaScript -->
+    <script src="./scripts/getdates.js"></script>
+
+</body>
+</html>
