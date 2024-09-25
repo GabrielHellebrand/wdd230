@@ -11,6 +11,6 @@
     /* Main sections in two columns for larger screens */
     main {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 }
