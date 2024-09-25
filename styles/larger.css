@@ -1,0 +1,16 @@
+@media (min-width: 768px) {
+    /* Flexbox for navigation links to be horizontal */
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 0;
+        list-style: none;
+    }
+
+    /* Main sections in two columns for larger screens */
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
