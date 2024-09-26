@@ -6,11 +6,14 @@
         gap: 15px;
         padding: 0;
         list-style: none;
+        align-items: center;
     }
 
     /* Main sections in two columns for larger screens */
     main {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        justify-content: center;
     }
 }
