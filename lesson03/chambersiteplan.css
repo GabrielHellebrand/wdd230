@@ -1,0 +1,49 @@
+body {
+    background-color: #f0f0f0; /* Background color */
+    color: #333; /* Text color */
+}
+
+header {
+    background-color: #428bca; /* Header background color */
+    color: #fff; /* Header text color */
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #333; /* Navigation bar background color */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff; /* Navigation link color */
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+nav a:hover {
+    color: #0073e6; /* Highlighted blue color on hover */
+}
+
+section {
+    padding: 20px;
+}
+
+/* Define your typography here */
+h1, h2 {
+    font-family: Arial, sans-serif;
+}
+
+p {
+    font-family: Georgia, serif;
+}
