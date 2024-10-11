@@ -1,0 +1,161 @@
+:root {
+    --primary-color: #606c38;
+    --secondary-color: #283618;
+    --accent-color: #dda15e; 
+    --text-color: #fefae0;
+    --background-color: #bc6c25;
+    --white: white;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Helvetica', sans-serif;
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Main Layout Styles */
+header {
+    background-color: var(--secondary-color);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: var(--white);
+    font-size: 1.1em;
+}
+
+/* Hamburger Menu for Mobile */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    background-color: var(--white);
+    height: 3px;
+    width: 25px;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background-color: var(--secondary-color);
+        padding: 10px;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+main {
+    padding: 20px;
+}
+
+#hero {
+    position: relative;
+    text-align: center;
+}
+
+#hero img {
+    width: 100%;
+    height: auto;
+}
+
+#hero .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+#call-to-action {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 30px;
+}
+
+#call-to-action .cta-button {
+    background-color: var(--accent-color);
+    padding: 10px 20px;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: var(--white);
+}
+
+/* Layout changes for larger screens */
+@media screen and (min-width: 769px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #events, #weather-card, #spotlights {
+        width: 100%;
+        max-width: 1200px;
+        margin: 20px auto;
+    }
+
+    /* Flexbox layout for spotlight section */
+    #spotlights {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .company-spotlight {
+        text-align: center;
+        flex-basis: 30%;
+        padding: 20px;
+        box-sizing: border-box;
+        background-color: var(--secondary-color);
+        color: var(--white);
+        width: 30%;
+    }
+    .company-spotlight img {
+        width: 100%;
+        height: auto;
+        max-height: 200px; /* Set a max height for images to ensure consistency */
+        object-fit: cover; /* Ensures the image covers the area properly without distortion */
+    }
+}
