@@ -1,0 +1,59 @@
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background-color: var(--secondary-color);
+        padding: 10px;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+main {
+    padding: 20px;
+}
+
+#hero {
+    position: relative;
+    text-align: center;
+}
+
+#hero img {
+    width: 100%;
+    height: auto;
+}
+
+#hero .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+#call-to-action {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 30px;
+}
+
+#call-to-action .cta-button {
+    background-color: var(--accent-color);
+    padding: 10px 20px;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: var(--white);
+}
